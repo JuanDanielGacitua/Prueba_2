@@ -32,12 +32,14 @@ $(document).ready(function () {
   $("#btn-cargar").on("click", function () {
       console.log("cargando informacion...");
       $("#spinner").html("");
-
+      
       let htmlSpinner = '<div class="lds-circle"><div></div></div>';
       $("#spinner").append(htmlSpinner);
 
       $.get("https://www.themealdb.com/api/json/v1/1/categories.php", function (data) {
         $(`#tabla`).empty();
+
+        $(`#tabla`).toggle();
 
           $.each(data.categories, function (i, item) {
             //propongo usar ${} en vez de '++' encuentro que es una practica mas ordenada y visiblemente mas clara
@@ -45,6 +47,7 @@ $(document).ready(function () {
                   <tr id="fila-${item.idCategory}">
                       <th scope="row">${item.idCategory}</th>
                       <td>${item.strCategory}</td>
+                      <td>${item.strCategoryDescription}</td>
                       <td><img src="${item.strCategoryThumb}" style="max-width: 150px;"></td>
                       <td><button onclick="verMas('${item.strCategory}')" class="btn btn-dark"><i class="fa-solid fa-plus"></i> Ver más</button></td>
                   </tr>
