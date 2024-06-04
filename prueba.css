@@ -20,11 +20,11 @@
 }
 
 #navlogo {
-  max-width: 85px;
+  max-width: 65px;
 }
 
 #chef {
-  max-width: 125px;
+  max-width: 95px;
   text-align: left;
 }
 
@@ -82,3 +82,52 @@ html, body {
   width: 100%;
   margin-top: auto;
 }
+
+/* color de fondo */
+#dark{
+  background-color: black;
+    color: white;
+}
+
+/* ajuste del txt carousel */
+.carousel-caption {
+  position: absolute;
+  top: 45%; /* Ajusta la distancia desde la parte superior */
+  left: 0; /* Ajusta el margen izquierdo */
+  transform: translateY(-50%); /* Centra verticalmente el caption */
+  text-align: center; /* Alinea el texto al centro */
+  width: 75%; /* Ajusta el ancho del caption */
+  background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo semi-transparente al caption */
+  padding: 30px; /* Añade un espacio alrededor del texto */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+
+/* ajuste del img de carousel */
+.carousel-item img {
+  /* max-width: 100%; Establece el ancho máximo de la imagen al 100% del contenedor */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  width: auto; /* Cambia el ancho de la imagen */
+  height: 600px; /* Cambia la altura de la imagen */
+  object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+}
+
+/* ajuste de botton  */
+.carousel-button {
+  position: absolute;
+  bottom: 60px; /* Ajusta la distancia desde la parte inferior */
+  left: 160px; /* Ajusta el margen izquierdo */
+  z-index: 2; /* Asegura que el botón esté por encima del caption */
+}
+
+hr {
+  border: 0; /* Elimina el borde predeterminado */
+  height: 4px; /* Grosor del hr */
+  background-color: white; /* Cambia el color del hr a rojo (#ff0000) */
+  margin: 20px 0; /* Añade margen arriba y abajo */
+}
+
+
+
+
+
