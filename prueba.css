@@ -96,10 +96,11 @@ html, body {
   left: 0; /* Ajusta el margen izquierdo */
   transform: translateY(-50%); /* Centra verticalmente el caption */
   text-align: center; /* Alinea el texto al centro */
-  width: 75%; /* Ajusta el ancho del caption */
+  width: auto; /* Ajusta el ancho del caption */
   background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo semi-transparente al caption */
   padding: 30px; /* Añade un espacio alrededor del texto */
   color: white; /* Cambia el color del texto a blanco */
+  border-radius: 10px;
 }
 
 
@@ -126,3 +127,4 @@ hr {
   background-color: white; /* Cambia el color del hr a rojo (#ff0000) */
   margin: 20px 0; /* Añade margen arriba y abajo */
 }
+
