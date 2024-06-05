@@ -51,17 +51,17 @@ $(document).ready(function () {
                       <td><img src="${item.strCategoryThumb}" style="max-width: 150px;"></td>
                       <td><button onclick="verMas('${item.strCategory}')" class="btn btn-dark"><i class="fa-solid fa-plus"></i> Ver más</button></td>
                   </tr>
-                  <tr class="nested-table" id="detalle-${item.strCategory}" style="display:none;">
+                  <tr class="segunda-tabla" id="detalle-${item.strCategory}" style="display:none;">
                       <td colspan="4">
                           <table class="table table-bordered">
                               <thead>
-                                  <tr>
+                                  <tr style = "color: rgb(255, 255, 255);">
                                       <th>ID </th>
                                       <th>Platillo </th>
                                       <th>Imagen </th>
                                   </tr>
                               </thead>
-                              <tbody id="tabla-detalle-${item.strCategory}"></tbody>
+                              <tbody id="tabla-detalle-${item.strCategory}" style = "color: rgb(255, 255, 255);"></tbody>
                           </table>
                       </td>
                   </tr>`;

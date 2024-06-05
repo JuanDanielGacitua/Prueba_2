@@ -3,6 +3,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  
+}
+*{
+  margin : 0;
+}
+.body{
+  background-color: #343a40;
+}
+
+#tabla-principal {
+  background-color: #000000;
+  color: rgb(161, 161, 161);
+}
+body {
+  background-color: #971111; /* Puedes ajustar el color según tu preferencia */
+}
+
+#fondo-tabla{
+  background-color: rgb(85, 1, 1);
 }
 
 #navtext {
@@ -28,7 +48,7 @@
   text-align: left;
 }
 
-/*Esto es lo visto en clases*/
+/* Spinner de carga*/
 .lds-circle,
 .lds-circle div {
   box-sizing: border-box;
@@ -63,6 +83,16 @@
   }
 }
 
+
+/*  Pie de página */
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  margin-top: auto;
+}
 html, body {
   height: 100%;
   margin: 0;
@@ -74,14 +104,7 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-.footer {
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  width: 100%;
-  margin-top: auto;
-}
+
 
 /* color de fondo */
 #dark{
@@ -92,40 +115,39 @@ html, body {
 /* ajuste del txt carousel */
 .carousel-caption {
   position: absolute;
-  top: 45%; /* Ajusta la distancia desde la parte superior */
-  left: 0; /* Ajusta el margen izquierdo */
-  transform: translateY(-50%); /* Centra verticalmente el caption */
-  text-align: center; /* Alinea el texto al centro */
-  width: auto; /* Ajusta el ancho del caption */
-  background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo semi-transparente al caption */
-  padding: 30px; /* Añade un espacio alrededor del texto */
-  color: white; /* Cambia el color del texto a blanco */
+  top: 45%; 
+  left: 0; 
+  transform: translateY(-50%); 
+  text-align: center; 
+  width: auto; 
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 30px; 
+  color: white; 
   border-radius: 10px;
 }
 
 
 /* ajuste del img de carousel */
 .carousel-item img {
-  /* max-width: 100%; Establece el ancho máximo de la imagen al 100% del contenedor */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
-  width: auto; /* Cambia el ancho de la imagen */
-  height: 600px; /* Cambia la altura de la imagen */
-  object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  margin: 0 auto; 
+  width: auto; 
+  height: 600px;
+  object-fit: cover; 
 }
 
 /* ajuste de botton  */
 .carousel-button {
   position: absolute;
-  bottom: 60px; /* Ajusta la distancia desde la parte inferior */
-  left: 160px; /* Ajusta el margen izquierdo */
-  z-index: 2; /* Asegura que el botón esté por encima del caption */
+  bottom: 60px; 
+  left: 160px; 
+  z-index: 2; 
 }
 
 hr {
-  border: 0; /* Elimina el borde predeterminado */
-  height: 4px; /* Grosor del hr */
-  background-color: white; /* Cambia el color del hr a rojo (#ff0000) */
-  margin: 20px 0; /* Añade margen arriba y abajo */
+  border: 0; 
+  height: 4px; 
+  background-color: white; 
+  margin: 20px 0; 
 }
 
 /* Caption en dispositivos móviles */
@@ -134,63 +156,30 @@ hr {
     top: 20%;
     left: auto;
     transform: translate(-10%, -10%);
-    width: 85vw; /* Ajusta el ancho del caption al 90% del viewport width */
-    padding: 10px; /* Ajusta el padding según sea necesario */
-    font-size: 2vw; /* Ajusta el tamaño del texto en función del viewport width */
+    width: 85vw; 
+    padding: 10px; 
+    font-size: 2vw; 
     height: 55vw;
   }
 
   .carousel-caption h2 {
-    font-size: 3vw; /* Ajusta el tamaño del título */
+    font-size: 3vw; 
   }
 
   .carousel-caption p {
-    font-size: 2vw; /* Ajusta el tamaño del párrafo */
+    font-size: 2vw; 
   }
 
   .carousel-item img {
-    height: 350px; /* Ajusta la altura de la imagen automáticamente */
-    width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
-    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    height: 350px; 
+    width: 100%; 
+    object-fit: cover; 
   }
 
   .carousel-button {
-    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-    left: 50%; /* Centra horizontalmente el botón */
-    transform: translateX(-50%); /* Centra el botón */
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
   }
 }
 
-/* 
-Caption en tablets
-@media (min-width: 768px) and (max-width: 1024px) {
-  .carousel-caption {
-    top: 50%;
-    left: auto;
-    transform: translate(-50%, -50%);
-    width: auto; /* Ajusta el ancho del caption */
-    /* padding: 20px;
-    font-size: 2vw;
-    height: auto;
-  }
-
-  .carousel-caption h2 {
-    font-size: 4vw;
-  }
-
-  .carousel-caption p {
-    font-size: 3vw;
-  }
-
-  .carousel-item img {
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .carousel-button {
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-  } 
-} 
